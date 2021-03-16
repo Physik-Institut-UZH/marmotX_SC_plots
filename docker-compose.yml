@@ -1,0 +1,44 @@
+version: "3.8"
+services:
+  
+  prometheus:
+    image: prom/prometheus:v2.20.1
+    restart: always
+    volumes:
+      - ./configs/prometheus.yaml:/etc/prometheus/prometheus.yml
+    ports:
+      - 9090:9090
+  
+  grafana:
+    image: grafana/grafana:7.1.5
+    restart: always
+    ports:
+      - 3000:3000
+    secrets:
+      - gf_email_config.ini
+    environment:
+      - GF_PATHS_CONFIG=/run/secrets/gf_email_config.ini
+    volumes:
+      - grafana-storage:/var/lib/grafana
+    
+  iotpy:
+    image: openscada/iotpy:v0.3.2
+    restart: always
+    volumes:
+      - ./Devices:/iot
+    environment:
+      - IOTPY_DEVICES_DIR=/iot
+    ports:
+      - 8085:8085
+
+volumes:
+  grafana-storage:
+    external: true
+
+secrets:
+  gf_email_config.ini:
+    external: true
+    
+
+
+
