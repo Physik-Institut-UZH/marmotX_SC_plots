@@ -62,5 +62,5 @@ The only thing you need to modify is **URL** set it to **http://prometheus:9090*
 
 ### Setup Alarms via Email
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![alt text](https://raw.githubusercontent.com/Physik-Institut-UZH/marmotX_SC_plots/main/images/grafana_alarms.png)
 
