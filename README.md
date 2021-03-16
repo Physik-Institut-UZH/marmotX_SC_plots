@@ -47,10 +47,10 @@ cd marmotX_SC_plots
 sudo docker stack deploy -c docker-compose.yml marmot
 
 # check the services are running
-docker stack services marmot
+sudo docker stack services marmot
 
 # Stop it
-docker stack rm marmot
+sudo docker stack rm marmot
 ```
 
 # Setup Grafana
