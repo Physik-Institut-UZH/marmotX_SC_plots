@@ -1,6 +1,6 @@
-while true; do
-rsync -h -v -r -P -t marmotx@marmotx.physik.uzh.ch:/home/atp/marmotx/slowcontrolxl/data/pdata /home/marmotx/slowcontrol-2021/data/pdata
-rsync -h -v -r -P -t marmotx@marmotx.physik.uzh.ch:/home/atp/marmotx/slowcontrolxl/data/tdata /home/marmotx/slowcontrol-2021/data/tdata
-rsync -h -v -r -P -t marmotx@marmotx.physik.uzh.ch:/home/atp/marmotx/slowcontrolxl/data/vdata /home/marmotx/slowcontrol-2021/data/vdata
-sleep 120
-done 	
+#while true; do
+rsync -h -v -r -P -t marmotx@marmotx.physik.uzh.ch:/home/atp/marmotx/slowcontrolxl/data/pdata/2* Data/pdata
+rsync -h -v -r -P -t marmotx@marmotx.physik.uzh.ch:/home/atp/marmotx/slowcontrolxl/data/tdata/2* Data/tdata
+rsync -h -v -r -P -t marmotx@marmotx.physik.uzh.ch:/home/atp/marmotx/slowcontrolxl/data/vdata/2* Data/vdata
+#sleep 120
+#done 	
