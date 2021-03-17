@@ -40,6 +40,15 @@ sudo source scripts/set_grafana_env.sh
 history -c 
 ```
 
+### Setup Data Directory
+
+```bash
+cd marmotX_SC_plots
+mkdir Data/pdata
+mkdir Data/tdata
+mkdir Data/vdata
+```
+
 # Deploy
 
 ```bash
