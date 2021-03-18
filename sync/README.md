@@ -20,7 +20,7 @@ You can check the syntax of the configuration with
 
     monit -t
 
-You can start running all monitores programs with
+You can start running all monitored programs with
 
     monit start all
 
