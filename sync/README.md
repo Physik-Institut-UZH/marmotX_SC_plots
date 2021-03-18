@@ -28,4 +28,4 @@ And you can check the status with
 
     monit status 
     
-More details can be found at https://mmonit.com/wiki/Monit/FAQ
+More details can be found at https://mmonit.com/monit/documentation/monit.html
