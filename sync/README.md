@@ -14,7 +14,7 @@ In case you want to use pid based instead of regex rule, you can use the script 
 
 After configuring it, you can do
 
-    monit reaload
+    monit reload
 
 You can check the syntax of the configuration with
 
