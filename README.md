@@ -73,3 +73,17 @@ The only thing you need to modify is **URL** set it to **http://prometheus:9090*
 
 ![alt text](https://raw.githubusercontent.com/Physik-Institut-UZH/marmotX_SC_plots/main/images/grafana_alarms.png)
 
+
+# Adding serial ports to containers
+
+You need to modify the file [docker-compose](https://github.com/Physik-Institut-UZH/marmotX_SC_plots/blob/main/docker-compose.yml) and add something like:
+```yaml
+ devices:
+    - "/dev/ttyUSB0:/dev/ttyUSB0"
+```
+to the container and then delete the system and recreate with the following:
+
+```bash
+sudo docker stack rm marmotsc
+sudo docker stack deploy -c docker-compose.yml marmotsc
+```
