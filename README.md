@@ -44,22 +44,22 @@ history -c
 
 ```bash
 cd marmotX_SC_plots
-mkdir Data/pdata
-mkdir Data/tdata
-mkdir Data/vdata
+mkdir -p Data/pdata
+mkdir -p Data/tdata
+mkdir -p Data/vdata
 ```
 
 # Deploy
 
 ```bash
 cd marmotX_SC_plots
-sudo docker stack deploy -c docker-compose.yml marmot
+sudo docker stack deploy -c docker-compose.yml marmotsc
 
 # check the services are running
-sudo docker stack services marmot
+sudo docker stack services marmotsc
 
 # Stop it
-sudo docker stack rm marmot
+sudo docker stack rm marmotsc
 ```
 
 # Setup Grafana
