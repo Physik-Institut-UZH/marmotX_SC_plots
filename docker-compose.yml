@@ -26,6 +26,9 @@ services:
       - ./Data:/Data
     environment:
       - IOTPY_DEVICES_DIR=/iot
+    # Example of how to mount a serial port USB
+    #devices:
+    #  - "/dev/ttyUSB0:/dev/ttyUSB0"
     ports:
       - 8085:8085
 
